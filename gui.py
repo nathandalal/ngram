@@ -27,8 +27,8 @@ map showing conditional probabilities of the N-gram model.
 """)
 
 st.sidebar.write("## Parameters")
-seq_lens_text = st.sidebar.text_input("Sequence Lengths", "[4]")
-smoothings_text = st.sidebar.text_input("Smoothings", "[0.03, 0.1]")
+seq_lens_text = st.sidebar.text_input("Sequence Lengths", "[3, 4, 5]")
+smoothings_text = st.sidebar.text_input("Smoothings", "[0.03, 0.1, 0.3, 1.0]")
 
 # validate text inputs are Python lists, and show any error to the user
 try:
