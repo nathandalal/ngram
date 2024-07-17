@@ -75,7 +75,6 @@ val_tokens = [char_to_token[c] for c in open(val_tokens_path, "r").read()]
 train_tokens = [char_to_token[c] for c in open(train_tokens_path, "r").read()]
 
 
-
 if st.button("Evaluate Hyperparameters"):
     best_loss = float("inf")
     best_kwargs = {}

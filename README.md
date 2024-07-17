@@ -86,4 +86,3 @@ The GUI itself will guide you through the rest of the steps.
 
 - Make better
 - Make exercises
-- Call for help: nice visualization / webapp that shows and animates the 4-gram language model and how it works.
