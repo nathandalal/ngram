@@ -128,7 +128,6 @@ def eval_split(model, tokens):
 
 # -----------------------------------------------------------------------------
 
-
 def main():
     # "train" the Tokenizer, so we're able to map between characters and tokens
     train_text = open('data/train.txt', 'r').read()
@@ -157,7 +156,7 @@ def main():
         train_loss = eval_split(model, train_tokens)
         val_loss = eval_split(model, val_tokens)
         print("seq_len %d | smoothing %.2f | train_loss %.4f | val_loss %.4f"
-              % (seq_len, smoothing, train_loss, val_loss))
+            % (seq_len, smoothing, train_loss, val_loss))
         # update the best hyperparameters
         if val_loss < best_loss:
             best_loss = val_loss
